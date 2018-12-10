@@ -99,9 +99,9 @@
     "@types/express-serve-static-core" "*"
     "@types/serve-static" "*"
 
-"@types/glob@^5.0.35":
-  version "5.0.35"
-  resolved "https://registry.yarnpkg.com/@types/glob/-/glob-5.0.35.tgz#1ae151c802cece940443b5ac246925c85189f32a"
+"@types/glob@^7.1.1":
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/@types/glob/-/glob-7.1.1.tgz#aa59a1c6e3fbc421e07ccd31a944c30eba521575"
   dependencies:
     "@types/events" "*"
     "@types/minimatch" "*"
@@ -4973,9 +4973,10 @@ spdx-license-ids@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-3.0.0.tgz#7a7cd28470cc6d3a1cfe6d66886f6bc430d3ac87"
 
-"spid-passport@git://github.com/gunzip/spid-passport.git#5900adf9":
+"spid-passport@git://github.com/gunzip/spid-passport.git#681554025efd2":
   version "1.0.0"
-  resolved "git://github.com/gunzip/spid-passport.git#5900adf925b99a91861b5d1f348ee8c7d499ed55"
+  uid "681554025efd2bc3eb2c57ac4858ebdfec022af7"
+  resolved "git://github.com/gunzip/spid-passport.git#681554025efd2bc3eb2c57ac4858ebdfec022af7"
   dependencies:
     passport "^0.4.0"
     passport-saml "^0.33.0"
