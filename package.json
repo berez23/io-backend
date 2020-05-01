@@ -7,7 +7,7 @@
     "node": "8.9.4"
   },
   "scripts": {
-    "prepare": "patch-package",
+    "prepare": "yarn run snyk-protect && patch-package",
     "build": "tsc",
     "build-noemit": "tsc --noEmit",
     "hot-reload": "nodemon src/server.js",
@@ -23,7 +23,8 @@
     "generate:proxy:public-models": "gen-api-models --api-spec api_public.yaml --no-strict --out-dir src/types/api",
     "generate:api:pagopaproxy": "rimraf src/types/api/pagopa-proxy && mkdir -p src/types/api/pagopa-proxy && gen-api-models --api-spec https://raw.githubusercontent.com/teamdigitale/italia-pagopa-proxy/v0.8.6/api_pagopa.yaml --no-strict --out-dir src/types/api/pagopa-proxy --request-types",
     "generate:test-certs": "./scripts/generate-test-certs.sh certs",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "snyk-protect": "snyk protect"
   },
   "repository": {
     "type": "git",
@@ -64,7 +65,8 @@
     "ulid": "^2.2.2",
     "validator": "^10.8.0",
     "winston": "^3.0.0",
-    "xmldom": "^0.1.27"
+    "xmldom": "^0.1.27",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@types/azure-sb": "^0.0.32",
@@ -136,5 +138,6 @@
       "!src/types/api/*.{ts}",
       "!src/**/*.d.ts"
     ]
-  }
+  },
+  "snyk": true
 }
